@@ -1,11 +1,12 @@
 import React from 'react';
 import Ticket from './Ticket';
 
+
 var masterTicketList = [
   {
     names: 'Thato and Haley',
     location: '3A',
-    issue: 'Firebase won\'t save record. Halp.'
+    issue: 'Firebase won\'t save record. Halp.',
   },
   {
     names: 'Sleater and Kinney',
@@ -23,6 +24,7 @@ function TicketList(){
   return (
     <div>
       <hr/>
+
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
           location={ticket.location}
