@@ -13,6 +13,7 @@ function Ticket(props){
           border: 10px;
         }
       `}</style>
+
       <style jsx>{`
         .imgFrame {
           margin: 10px;
@@ -20,9 +21,10 @@ function Ticket(props){
           height: auto;
           border:  10px;
         }`}</style>
+
       <h3>{props.location}</h3>
       <h3>{props.names}</h3>
-      <p className="red-text"><em>{props.issue}</em></p>
+      <p><em>{props.issue}</em></p>
       <img className="imgFrame" src={picture}/>
       <hr/>
     </div>
@@ -32,8 +34,7 @@ function Ticket(props){
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string,
-
+  issue: PropTypes.string
 };
 
 export default Ticket;
